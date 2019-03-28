@@ -6,8 +6,8 @@ RUN set -ex && \
     add-apt-repository ppa:git-core/ppa && \
     apt-get update -qq && \
     apt-get install -y git-lfs && \
+    apt-get install -y tesseract-ocr libtesseract-dev && \
     rm -rf /var/lib/apt/lists/*
-
 USER $NB_USER
 
 RUN set -ex && \
