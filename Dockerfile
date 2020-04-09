@@ -1,4 +1,4 @@
-FROM jupyter/datascience-notebook:7a0c7325e470
+FROM jupyter/datascience-notebook:dc9744740e12
 USER root
 RUN set -ex && \
     apt-get update -qq && \
